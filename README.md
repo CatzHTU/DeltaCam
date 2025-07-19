@@ -40,7 +40,7 @@ bugs y cosas raras si lo usas con otros vehiculos.
 **Pon esto en StarterPlayerScripts como un LocalScript.**
 
 # Como puedo agradecrte?
-Simplemente madame un DM a la cuenta de discord de **catzhtu**
+Simplemente madame un DM a la cuenta de discord de **catzhtu.ash**
 
 # Autoria y agradecimientos
 **Ashley "Catz"** : Script
