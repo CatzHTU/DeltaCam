@@ -17,7 +17,7 @@
    ██    ███████  ██████ ██   ██ ██   ████  ██████  ███████  ██████   ██████  ██ ███████ ███████ 
                                                                                  
 
-Ashcorp tecnologies - "Dont look at the code :P"
+Ashcorp tecnologies - "Spaggetti code since 2022"
 
 
 █████████████████████████████
@@ -29,8 +29,8 @@ Ashcorp tecnologies - "Dont look at the code :P"
 
 this is basically a script that when the player presses
 the key C it toggles 1st person cam. It also does
-the illusion of vehicle suspension via jumbly smart
-camera position thinga-ma-jigs. Used for trains, expect
+the illusion of vehicle suspension via camera position 
+thingamajigs. Used for trains, expect
 bugs and incopences when used with other vehicles
 
 
@@ -43,7 +43,7 @@ inspired by british railway's 1st person cam system!
 
 V 1.0
 
-- Ashley (@CatzHTU) - 2025 COPYRIGHT MODIFICATION ALLOWED - MUST CREDIT -- ASHCORP TECHNOLOGIES
+- Ashley (@CatzHTU) - 2026 COPYRIGHT MODIFICATION ALLOWED - MUST CREDIT -- ASHCORP TECHNOLOGIES
 ]]
 --[[
  
@@ -64,12 +64,12 @@ local player    = Players.LocalPlayer
 local cam       = workspace.CurrentCamera
 local SPRING_K  = 20      -- suspension stiffness
 local DAMP_K    = 5       -- suspension damping
-local suspensionMultiplier = 2 -- Multiply all suspension effects. Use 0.5 for subtle, 2+ for chaos
+local suspensionMultiplier = 2 -- Multiply all suspension effects.
 
--- state
-local active               = false  -- first‐person active?
+-- states
+local active               = false 
 local baseFOV              = 70
-local zoomStep             = 2 		-- how much the fov changes when the player scrools for 1 delta
+local zoomStep             = 2 		-- how much the fov changes when the player scrools for 1 delta (one mouse scroll snapping thingy. Thats where the name comes from, yes)
 local minFOV, maxFOV       = 30, 90	-- 
 local springPos, springVel = 0, 0 	-- spring positions and spring velocities
 local swayPos, swayVel     = 0, 0   -- lateral movement
@@ -84,7 +84,7 @@ local cameraRootPart 	   = "hum" 	-- alternate between "hum" (humanoid) and "roo
 █████████████████████████████
 
 ]]
--- find the seat when we sit
+
 
 local renderConn           = nil -- this thing is holding up the entire suspension together. pls no touchy T_T
 
@@ -92,7 +92,7 @@ local function onSit(seat, humanoid)
 	active = false
 	cam.CameraType = Enum.CameraType.Custom
 	cam.FieldOfView = baseFOV
-	-- bind key for toggle
+
 	ContextAction:BindAction("ToggleFP", function(_, state)
 		if state == Enum.UserInputState.Begin then
 			active = not active
@@ -134,7 +134,7 @@ local function onSit(seat, humanoid)
 		end
 	end, false, Enum.KeyCode.C)
 
-	-- wheel for zoom
+
 	UserInput.InputChanged:Connect(function(inp)
 		if active and inp.UserInputType == Enum.UserInputType.MouseWheel then
 			local delta = inp.Position.Z > 0 and -zoomStep or zoomStep
@@ -142,7 +142,7 @@ local function onSit(seat, humanoid)
 		end
 	end)
 
-	-- suspension loop
+
 	if renderConn then
 		renderConn:Disconnect()
 	end
@@ -183,7 +183,7 @@ local function onSit(seat, humanoid)
 	end)
 end
 
--- watch for sitting
+
 player.CharacterAdded:Connect(function(char)
 	char:WaitForChild("Humanoid").Seated:Connect(function(isSit, activeSeat)
 		if isSit and activeSeat:IsA("VehicleSeat") or activeSeat:IsA("Seat") then
