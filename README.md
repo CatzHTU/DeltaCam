@@ -1,13 +1,39 @@
-# DeltaCam
-Ashcorp studios 2025
-# Que es deltacam?
-Deltacam es un novel sistema simple de suspension hecho en roblox para vehiculos. Es de libre edicion y codigo abierto, lo cual significa que cualquiera puede modificar y ver el codigo, ademas de usarlo. Se pueden hacer re-masters, remakes, y modificaciones de todo tipo siempre y cuando se proporcione créditos a la autorìa original, CatzHTU / Ash. Se puede utilizar para todo tipo de vehiculos, desde coches, trenes, aviones... Es facilmente configurable y el primero de su especie en ser publicamente disponible.
+## DeltaCam
 ![image](https://github.com/user-attachments/assets/e2ad45cf-8963-493c-8832-efd12b33fd97)
+Ashcorp studios 2026
+# English
 
-# Quien lo puede utilizar? 
+## What is Deltacam
+
+Deltacam is a first of it's kind (that's open source at least) suspension system for vehicles that doesn't require complicated setups. It's free of use and open source, meaning that anyone can modify it as long as they give credit to the author -Ashdev-. It can be used in all sorts of vehicles, from cars to planes, altough i've designed it for trains, in the beginning. It has an easy set up and the important parts of the code are commented, similarly to how adonis config does it. 
+
+## Who can use it?
+
+Anyone, really! 
+
+## How do i use it? 
+
+In short, its a local script that changes the player camera's offset giving the effect of suspension. The player must press the C key to toggle it. It will make the player go on first peron. **Put this in StarterPlayerScripts as a LocalScript.**
+
+## Author and Thanks
+**Ashley "Ashdev"** : Script
+
+**Adonis Admin**: Inspiration!
+
+**British Railways** : Idea
+
+**You** : For using it!
+
+
+# Spanish
+## Que es deltacam?
+Deltacam es un novel sistema simple de suspension hecho en roblox para vehiculos. Es de libre edicion y codigo abierto, lo cual significa que cualquiera puede modificar y ver el codigo, ademas de usarlo. Se pueden hacer re-masters, remakes, y modificaciones de todo tipo siempre y cuando se proporcione créditos a la autorìa original, Ashdev. Se puede utilizar para todo tipo de vehiculos, desde coches, trenes, aviones... Es facilmente configurable y el primero de su especie en ser publicamente disponible.
+
+
+## Quien lo puede utilizar? 
 Cualquiera, desde los juegos mas grande a los mas pequeños! No es necesario pedir permiso, simplemente copias el codigo y lo metes en tu juego siguiendo las instrucciones que indica el mismo. 
 
-# No se ingles, como lo puedo configurar?
+## No se ingles, como lo puedo configurar?
 Adjunto la configuracion pasada al español! 
 
 ```luau
@@ -32,18 +58,18 @@ local swayPos, swayVel     = 0, 0   -- movimiento lateral
 local cameraRootPart 	   = "hum" 	-- alterna entre `"hum"` (humanoid) y `"root"` (root part). la ultima hace que todo el jugador sea invisible. Tambien se puede establecer como un `cframe` o un `Vector`. Por defecto es, o si pasa cualquier error, es `"hum"`.
 ```
 
-# Como lo uso?
+## Como lo uso?
 
 Este es básicamente un script que cuando el jugador presiona la tecla C activa o desactiva la camara en primera persona. Tambien hace una ilusion de suspension del vehiculo con movimientos similares a la suspension de la camara, actua y da el pego pero no hay suspension basada en fisicas. Se puede usar para todo tipo de vehiculos, desde trenes, barcos, coches..., esperate
 bugs y cosas raras si lo usas con otros vehiculos.
 
 **Pon esto en StarterPlayerScripts como un LocalScript.**
 
-# Como puedo agradecrte?
+## Como puedo agradecrte?
 Simplemente madame un DM a la cuenta de discord de **catzhtu.ash**
 
-# Autoria y agradecimientos
-**Ashley "Catz"** : Script
+## Autoria y agradecimientos
+**Ashley "Ashdev"** : Script
 
 **Adonis Admin**: Inspiracion!
 
