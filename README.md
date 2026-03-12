@@ -16,7 +16,7 @@ Anyone, really!
 In short, its a local script that changes the player camera's offset giving the effect of suspension. The player must press the C key to toggle it. It will make the player go on first peron. **Put this in StarterPlayerScripts as a LocalScript.**
 
 ## Author and Thanks
-**Ashley "Ashdev"** : Script
+**Noelle "Ashdev"** : Script
 
 **Adonis Admin**: Inspiration!
 
@@ -69,7 +69,7 @@ bugs y cosas raras si lo usas con otros vehiculos.
 Simplemente madame un DM a la cuenta de discord de **catzhtu.ash**
 
 ## Autoria y agradecimientos
-**Ashley "Ashdev"** : Script
+**Noelle "Ashdev"** : Script
 
 **Adonis Admin**: Inspiracion!
 
